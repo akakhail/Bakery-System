@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Web_Project.Site1" %>
+
+<!DOCTYPE html  lang="en">
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salman</title>
+      <link rel="stylesheet" href="style.css" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="s">
+                <div class="navbar">
+                    <a href="index.html"><img class="logo" src="k.PNG" /></a>
+                    <h2>SALMAN SWEETS AND BAKERS</h2>
+                </div>
+                <div class="nav-items">
+                    <ul>
+                        <a href="index.aspx"><li class="active">Home</li></a>
+                        <a href="Buiscuit.aspx"><li class="active">Buiscuit</li></a>
+                        <a href="Sweets.aspx"><li class="active">Sweets</li></a>
+                        <a href="Fastfood.aspx"><li class="active">FastFoods</li></a>
+                        <a href="Cake.aspx"><li class="active">Cake</li></a>
+                        <a href="Contactus.aspx"><li class="active">Contact Us</li></a>
+                    </ul>
+                </div>
+                <div class="col-12" style=" background-color: black; color:white;"> <marquee scrollamount="5" direction="left" behavior="alternate" onmouseover="stop()" onmouseout="start()"><b>Aim To Provide Quality over Quantity</b></marquee></div>
+        </div>
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+             <footer>
+        <p >Copyright 2021 | Powered by Salman Sweets and Bakers.PK</p>
+    </footer>
+        </div>
+    </form>
+</body>
+</html>
